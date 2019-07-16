@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Kaiju Big Battel - KBB FC Registration</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <header class="row">
+            <div class="jumbotron col-12 text-center">
+                <h1>Kaiju Big Battel - Registration</h1>
+            </div>
+        </header>
+
+        <main class="position-relative">
+
+            <!-- Begin Nav -->
+            <nav class="row">
+                <ul class="nav text-center bg-dark p-4 col-12">
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="interact.html">Interact</a>
+                    </li>
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="history.html">History</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- Form Area begins-->
+            <section>
+
+                <div class="row bg-light">
+                    <h2 class="col text-center font-italic py-4">Join The Kaiju Big Battel Fighto Club!</h2>
+                    <form class="pb-5 col-10 justify-content-center offset-1 text-center" action="login.html">
+
+                        <!-- Row 1: First Name, Last Name -->
+                        <div class="form-row">
+                            <div class="col pb-5 pr-5">
+                                <label for="kbfirstname">First Name: </label>
+                                <input type="text" class="form-control" id="kbfirstname" name="kbfirstname" placeholder="Burger">
+                            </div>
+
+                            <div class="col"><label for="kblastname">Last Name: </label>
+                                <input type="text" class="form-control" id="kblastname" name="kblastname" placeholder="Bear">
+                            </div>
+                        </div>
+
+                        <!-- Row 2: Email Address, Password (has required) -->
+                        <div class="form-row">
+                            <div class="col pb-5 pr-5">
+                                <label for="kbemail">Email Address: </label>
+                                <input type="email" class="form-control" id="kbemail" name="kbemail" placeholder="burgerbear@kaiju.com">
+                            </div>
+
+                            <div class="col"><label for="kbpassword">Password: </label>
+                                <input type="password" class="form-control" id="kbpassword" name="kbpassword" placeholder="Password" required>
+                            </div>
+                        </div>
+
+                        <!-- Row 3: How Did You Hear About Us, Confirm Password-->
+                        <div class="form-row">
+                            <div class="form-group col-6 pr-4 pb-5">
+                                <label for="kbreferral" class="justify-content-center">How Did You Hear About Us?: </label>
+                                <select class="form-control" id="kbreferral" name="kbreferral">
+                                    <option>Friend/Relative</option>
+                                    <option>Internet</option>
+                                    <option>Poster</option>
+                                    <option>I am a WWN Subscriber</option>
+                                </select>
+                            </div>
+
+                            <div class="col pl-4">
+                                <label for="kbpasswordconf">Confirm Password: </label>
+                                <input type="password" class="form-control" id="kbpasswordconf" name="kbpasswordconf" placeholder="Confirm Password" required>
+                            </div>
+                        </div>
+
+                        <!-- Row 4: Phone Number, Phone Number Type Radios -->
+                        <div class="form-row">
+                            <div class="col-6 pb-5 pr-4">
+                                <label for="kbphone">Phone Number: </label>
+                                <input type="tel" class="form-control" name="kbphone" id="kbphone" placeholder="860-867-5309">
+                            </div>
+
+                            <fieldset class="row col-4 offset-1 justify-content-center radioalign">
+                                <legend class="col-form-label"><label>Phone Number Type: </label></legend>
+                                <div class="text-left position-relative radioalign offset-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="phonetype" id="mobileph" value="mobileph" checked>
+                                        <label class="form-check-label" for="mobileph">
+                                          Mobile
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="phonetype" id="homeph" value="homeph">
+                                        <label class="form-check-label" for="homeph">
+                                          Home
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <!-- Row 5: Favorite KBB Monster Select, Other-->
+                        <div class="form-row">
+                            <div class="form-group col-6 pr-4">
+                                <label for="kbfavmonster" class="justify-content-center">Your Favorite KBB Monster?: </label>
+                                <select class="form-control" id="kbfavmonster" name="kbfavmonster">
+                                      <option>Burger Bear</option>
+                                      <option>Unicorn Party</option>
+                                      <option>American Beetle</option>
+                                      <option>Dusto Bunny</option>
+                                      <option>Dr. Cube</option>
+                                      <option>Other</option>
+                                    </select>
+                            </div>
+                            <div class="col pb-5 pl-4">
+                                <label for="kbother">If Other, Who?: </label>
+                                <input type="text" class="form-control" id="kbother" name="kbother" placeholder="Anyone but Double Unicorn Dark">
+                            </div>
+                        </div>
+
+                        <!-- Register button links to login.html -->
+                        <button type="submit" class="btn btn-primary mb-2 px-5 py-2">Register</button>
+
+                    </form>
+                </div>
+
+            </section>
+
+            <!-- Footer -->
+            <footer class="row bg-dark py-1">
+                <div class="col-6 text-center text-white ">
+                    Copyright Kaiju Big Battel 2019
+                </div>
+                <div class="col-6 text-center text-white">
+                    <a href="mailto:kaiju@kaiju.com" target="_top">kaiju@kaiju.com</a>
+                </div>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Kaiju Big Battel - KBB FC Interact</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <header class="row">
+            <div class="jumbotron col-12 text-center">
+                <h1>Kaiju Big Battel - KBB FC Interact</h1>
+            </div>
+        </header>
+
+        <main class="position-relative">
+
+            <!-- Begin Nav -->
+            <nav class="row">
+                <ul class="nav text-center bg-dark p-4 col-12">
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="interact.html">Interact</a>
+                    </li>
+                    <li class="nav-item border border-white">
+                        <a class="nav-link text-white" href="history.html">History</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Content -->
+            <section class="row bg-light">
+
+                <div class="col pt-4 text-center">
+                    <h2 class="font-italic">Welcome To KBB FC Interact!</h2>
+                    <p class="col-10 offset-1">With a purposeful grimace and a terrible sound, he pulls the spitting high-tension wires down. Helpless people on subway trains scream, bug-eyed, as he looks in on them. He picks up a bus and he throws it back down as he wades through
+                        the buildings toward the center of town. Oh, no, they say he's got to go, go, go, Godzilla (yeah). Oh, no, there goes Tokyo, go, go, Godzilla (yeah). Oh, no, they say he's got to go, go, go, Godzilla (yeah). Oh, no, there goes
+                        Tokyo, go, go, Godzilla (yeah). Godzilla!</p>
+                </div>
+            </section>
+
+            <!-- KBB FC Member Ticket Info Table -->
+            <section class="row bg-light">
+                <div class="col py-5">
+                    <h2 class="text-center font-italic">FC Member Ticket Corner</h2>
+                    <table class="table table-bordered table-hover text-center">
+                        <caption>KBB FC Member Ticket Information</caption>
+                        <thead class="bg-dark text-white">
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Show</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">KBB FC Member Presale Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Saturday, November 9, 2019</th>
+                                <td>Twice Upon A Time</td>
+                                <td>Once Ballroom (Somerville, MA)</td>
+                                <td>VIP w/ Meet & Greet: $30<br>Front Row: $20<br>Gen. Admission: $10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sunday, November 10, 2019</th>
+                                <td>Kaiju For Kidz II</td>
+                                <td>Once Ballroom (Somerville, MA)</td>
+                                <td>VIP w/ Meet & Greet: $30<br>Front Row: $20<br>Gen. Admission: $10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Saturday, January 18, 2020</th>
+                                <td>Unicorn Family Matters</td>
+                                <td>The Orpheum (Tampa, FL)</td>
+                                <td>VIP w/ Meet & Greet: $30<br>Front Row: $20<br>Gen. Admission: $10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <!-- Form Section Begins -->
+            <section>
+
+                <div class="row bg-light">
+                    <h2 class="col text-center font-italic">Order KBB FC Member Tickets Now!</h2>
+                    <form class="pb-5 col-10 justify-content-center offset-1 text-center" method="POST" id="kborderinfo">
+
+                        <!-- Row 1: First Name, Last Name -->
+                        <div class="form-row">
+                            <div class="col pb-4 pr-5">
+                                <label for="kbfirstname">First Name: </label>
+                                <input type="text" class="form-control" id="kbfirstname" name="kbfirstname" placeholder="Burger">
+                            </div>
+
+                            <div class="col"><label for="kblastname">Last Name: </label>
+                                <input type="text" class="form-control" id="kblastname" name="kblastname" placeholder="Bear">
+                            </div>
+                        </div>
+
+                        <!-- Row 2: Email Address, Password (has required) -->
+                        <div class="form-row">
+                            <div class="col pb-4 pr-5">
+                                <label for="kbemail">Email Address: </label>
+                                <input type="email" class="form-control" id="kbemail" name="kbemail" placeholder="burgerbear@kaiju.com">
+                            </div>
+
+                            <div class="col"><label for="kbpassword">Password: </label>
+                                <input type="password" class="form-control" id="kbpassword" name="kbpassword" placeholder="Password" required>
+                            </div>
+                        </div>
+
+                        <!-- Row 3: Number of Tickets, Tier of Tickets -->
+                        <div class="form-row">
+                            <div class="form-group col-6 pr-4">
+                                <label for="kbtickets" class="justify-content-center">Number Of Tickets Desired: </label>
+                                <br>
+                                <input type="number" class="form-control" id="kbtickets" name="kbtickets" min="1" max="10" placeholder="10 ticket maximum per member">
+                            </div>
+
+                            <div class="form-group col-6 pl-4">
+                                <label for="kbfavmonster" class="justify-content-center">Tier Of Tickets Desired: </label>
+                                <select class="form-control" id="kbfavmonster" name="kbfavmonster"> 
+                                                <option>VIP w/ Meet & Greet</option>
+                                                  <option>Front Row Seats</option>
+                                                  <option>General Admission (Standing Room Only)</option>
+                                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Row 4: Event Tickets Desired -->
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="kbeventchoice" class="justify-content-center">Event Tickets Desired: </label>
+                                <select class="form-control" id="kbeventchoice" name="kbeventchoice"> 
+                                    <option>11/9/2019 -  Twice Upon A Time - Once Ballroom (Somerville, MA)</option>
+                                    <option>11/10/2019 - Kaiju For Kidz II - Once Ballroom (Somerville, MA)</option>
+                                    <option>1/18/2020 -  Unicorn Family Matters - The Orpheum (Tampa, FL)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Logout button links to index.html -->
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <button type="submit" id="submit" class="btn btn-primary mb-2 px-5 py-2">Submit</button>
+                                <input type="reset" class="btn btn-warning mb-2 px-5 py-2">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Table populates with form information -->
+                <div class="row bg-light">
+                    <div class="col">
+                        <h2 class="col text-center font-italic">Your KBB FC Ticket Order Information!</h2>
+                        <table id="details" class="table table-bordered table-hover text-center">
+                            <caption>KBB FC Member Order Information</caption>
+                            <thead class="bg-dark text-white">
+                                <tr>
+                                    <td scope="col">First Name: </td>
+                                    <td scope="col">Last Name: </td>
+                                    <td scope="col">Email Address: </td>
+                                    <td scope="col">Number of Tickets: </td>
+                                    <td scope="col">Tier of Tickets: </td>
+                                    <td scope="col">Event Tickets Desired: </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 bg-light text-center">
+                        <a class="btn btn-danger my-3 px-5 py-2" href="index.html" role="button">Logout</a>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            <!-- Footer -->
+            <footer class="row bg-dark py-1">
+                <div class="col-6 text-center text-white">
+                    Copyright Kaiju Big Battel 2019
+                </div>
+                <div class="col-6 text-center text-white">
+                    <a href="mailto:kaiju@kaiju.com" target="_top">kaiju@kaiju.com</a>
+                </div>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="scriptimade.js"></script>
+
+</body>
