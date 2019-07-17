@@ -56,7 +56,9 @@
                     <h2 class="col text-center font-italic pt-4">Login To Your KBB FC Account!</h2>
 
                     <!-- Begin Form -->
-                    <form class="pb-5 pt-5 col-10 justify-content-center offset-1 text-center" method="POST" action="interact.html">
+                    <!-- Post Method should be in form but omitted for sake of github pages issue. Defaults to Get Method -->
+                    <form class="pb-5 pt-5 col-10 justify-content-center offset-1 text-center" action="interact.html">
+
 
                         <!-- Email Address, Password -->
                         <div class="form-row">
@@ -86,6 +88,7 @@
                         <!-- Submit button links to interact.html -->
                         <div class="col">
                             <button type="submit" class="btn btn-primary mb-2 px-5 py-2">Login</button>
+                            <input type="reset" class="btn btn-warning mb-2 px-5 py-2">
                         </div>
 
                     </form>
