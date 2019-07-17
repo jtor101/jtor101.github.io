@@ -25,31 +25,31 @@
             </div>
         </header>
 
-        <main class="position-relative">
+        <!-- Begin Nav -->
+        <nav class="row">
+            <ul class="nav text-center bg-dark p-4 col-12">
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="about.html">About</a>
+                </li>
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="login.html">Login</a>
+                </li>
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="register.html">Register</a>
+                </li>
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="interact.html">Interact</a>
+                </li>
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="history.html">History</a>
+                </li>
+            </ul>
+        </nav>
 
-            <!-- Begin Nav -->
-            <nav class="row">
-                <ul class="nav text-center bg-dark p-4 col-12">
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="register.html">Register</a>
-                    </li>
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="interact.html">Interact</a>
-                    </li>
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="history.html">History</a>
-                    </li>
-                </ul>
-            </nav>
+        <main>
 
             <section>
 
@@ -61,17 +61,16 @@
                     <!-- Post Method should be in form but omitted for sake of github pages issue. Defaults to Get Method -->
                     <form class="pb-5 pt-5 col-10 offset-1 text-center" action="interact.html">
 
-
                         <!-- Email Address, Password -->
                         <div class="form-row">
                             <div class="col pb-4 pr-5">
                                 <label for="kbemail">Email Address: </label>
-                                <input type="email" class="form-control" id="kbemail" placeholder="burgerbear@kaiju.com">
+                                <input type="email" class="form-control" name="kbemail" id="kbemail" placeholder="burgerbear@kaiju.com" maxlength="30" required>
                             </div>
 
                             <!-- Password form has required -->
                             <div class="col"><label for="kbpassword">Password: </label>
-                                <input type="password" class="form-control" id="kbpassword" placeholder="Password" required>
+                                <input type="password" class="form-control" name="kbpassword" id="kbpassword" placeholder="Password" maxlength="14" required>
                             </div>
                         </div>
 
@@ -79,7 +78,7 @@
                         <div class="form-row">
                             <div class="col pb-4">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="remember">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember">
                                     <label class="form-check-label" for="remember">
                                         Remember me!
                                     </label>
@@ -99,17 +98,17 @@
 
             </section>
 
-            <!-- Footer -->
-            <footer class="row bg-dark py-1">
-                <div class="col-6 text-center text-white ">
-                    Copyright Kaiju Big Battel 2019
-                </div>
-                <div class="col-6 text-center text-white">
-                    <a href="mailto:kaiju@kaiju.com" target="_top">kaiju@kaiju.com</a>
-                </div>
-            </footer>
-
         </main>
+
+        <!-- Footer -->
+        <footer class="row bg-dark py-1">
+            <div class="col-6 text-center text-white ">
+                Copyright Kaiju Big Battel 2019
+            </div>
+            <div class="col-6 text-center text-white">
+                <a href="mailto:kaiju@kaiju.com" target="_top">kaiju@kaiju.com</a>
+            </div>
+        </footer>
 
     </div>
 

@@ -13,13 +13,6 @@ nav ul li {
 }
 
 
-/* Nav, Section, and Footer Positioning */
-
-main {
-    bottom: 35px;
-}
-
-
 /* Radio Button Positioning - .radioalign is applied to radio buttons on register.html */
 
 .radioalign {

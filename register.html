@@ -25,32 +25,31 @@
             </div>
         </header>
 
-        <main class="position-relative">
+        <!-- Begin Nav -->
+        <nav class="row">
+            <ul class="nav text-center bg-dark p-4 col-12">
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="about.html">About</a>
+                </li>
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="login.html">Login</a>
+                </li>
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="register.html">Register</a>
+                </li>
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="interact.html">Interact</a>
+                </li>
+                <li class="nav-item border border-white">
+                    <a class="nav-link text-white" href="history.html">History</a>
+                </li>
+            </ul>
+        </nav>
 
-            <!-- Begin Nav -->
-            <nav class="row">
-                <ul class="nav text-center bg-dark p-4 col-12">
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="login.html">Login</a>
-                    </li>
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="register.html">Register</a>
-                    </li>
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="interact.html">Interact</a>
-                    </li>
-                    <li class="nav-item border border-white">
-                        <a class="nav-link text-white" href="history.html">History</a>
-                    </li>
-                </ul>
-            </nav>
-
+        <main>
 
             <!-- Form Area begins-->
             <section>
@@ -63,12 +62,12 @@
                         <div class="form-row">
                             <div class="col pb-5 pr-5">
                                 <label for="kbfirstname">First Name: </label>
-                                <input type="text" class="form-control" id="kbfirstname" name="kbfirstname" placeholder="Burger">
+                                <input type="text" class="form-control" id="kbfirstname" name="kbfirstname" placeholder="Burger" maxlength="20" required>
                             </div>
 
                             <div class="col">
                                 <label for="kblastname">Last Name: </label>
-                                <input type="text" class="form-control" id="kblastname" name="kblastname" placeholder="Bear">
+                                <input type="text" class="form-control" id="kblastname" name="kblastname" placeholder="Bear" maxlength="20" required>
                             </div>
                         </div>
 
@@ -76,11 +75,14 @@
                         <div class="form-row">
                             <div class="col pb-5 pr-5">
                                 <label for="kbemail">Email Address: </label>
-                                <input type="email" class="form-control" id="kbemail" name="kbemail" placeholder="burgerbear@kaiju.com">
+                                <input type="email" class="form-control" id="kbemail" name="kbemail" placeholder="burgerbear@kaiju.com" maxlength="30" required>
                             </div>
 
                             <div class="col"><label for="kbpassword">Password: </label>
-                                <input type="password" class="form-control" id="kbpassword" name="kbpassword" placeholder="Password" required>
+                                <input type="password" class="form-control" id="kbpassword" name="kbpassword" placeholder="Password" aria-describedby="kbpasswordhelp" maxlength="14" required>
+                                <small id="kbpasswordhelp" class="form-text text-muted">
+                                        Must be 7-14 characters long
+                                    </small>
                             </div>
                         </div>
 
@@ -98,7 +100,7 @@
 
                             <div class="col pl-4">
                                 <label for="kbpasswordconf">Confirm Password: </label>
-                                <input type="password" class="form-control" id="kbpasswordconf" name="kbpasswordconf" placeholder="Confirm Password" required>
+                                <input type="password" class="form-control" id="kbpasswordconf" name="kbpasswordconf" placeholder="Confirm Password" maxlength="14" required>
                             </div>
                         </div>
 
@@ -106,7 +108,7 @@
                         <div class="form-row">
                             <div class="col-6 pb-5 pr-4">
                                 <label for="kbphone">Phone Number: </label>
-                                <input type="tel" class="form-control" name="kbphone" id="kbphone" placeholder="860-867-5309">
+                                <input type="tel" class="form-control" name="kbphone" id="kbphone" placeholder="860-867-5309" maxlength="12" required>
                             </div>
 
                             <fieldset class="row col-4 offset-1 radioalign">
@@ -156,17 +158,17 @@
 
             </section>
 
-            <!-- Footer -->
-            <footer class="row bg-dark py-1">
-                <div class="col-6 text-center text-white ">
-                    Copyright Kaiju Big Battel 2019
-                </div>
-                <div class="col-6 text-center text-white">
-                    <a href="mailto:kaiju@kaiju.com" target="_top">kaiju@kaiju.com</a>
-                </div>
-            </footer>
-
         </main>
+
+        <!-- Footer -->
+        <footer class="row bg-dark py-1">
+            <div class="col-6 text-center text-white ">
+                Copyright Kaiju Big Battel 2019
+            </div>
+            <div class="col-6 text-center text-white">
+                <a href="mailto:kaiju@kaiju.com" target="_top">kaiju@kaiju.com</a>
+            </div>
+        </footer>
 
     </div>
 
