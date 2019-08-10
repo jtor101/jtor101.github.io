@@ -2,10 +2,19 @@ body {
   background-color: darkolivegreen;
 }
 
-header {
+#indexHeader {
   position: relative;
   top: 1em;
   background-image: url("/images/headerbgforest.jpg");
+  background-color: darkgreen;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mtnHeader {
+  position: relative;
+  top: 1em;
+  background-image: url("/images/mtnheaderbg.jpg");
   background-color: darkgreen;
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,6 +58,10 @@ label {
 #pickerByParkTypeDiv,
 #pickerByAllDiv {
   display: none;
+}
+
+footer {
+  background-image: linear-gradient(white, gray);
 }
 
 @media (min-width: 300px) {
@@ -112,7 +125,6 @@ label {
     position: relative;
     right: 4em;
   }
-  
 }
 
 @media (min-width: 700px) {
