@@ -21,10 +21,12 @@
   </head>
 
   <body class="container-fluid">
+    <!-- Header -->
     <header class="jumbotron img-fluid" id="mtnHeader">
       <h1 class="text-left">M.M.S.</h1>
     </header>
 
+    <!-- Nav -->
     <nav class="row position-relative">
       <ul class="col-4 offset-8 nav flex-column">
         <li class="nav-item">
@@ -38,10 +40,12 @@
       </ul>
     </nav>
 
+    <!-- Main -->
     <main>
       <section class="row position-relative">
         <div class="col-7">
           <h2 class="text-white">About Us</h2>
+
           <p class="text-white">
             The Misty Mountains Service (a division of Palisades Parks) is based
             out of The Shire, and remains focused on celebrating our country's
@@ -51,16 +55,20 @@
         </div>
       </section>
 
+      <!-- Divider -->
       <hr class="bg-white" />
 
       <div class="row">
         <form class="col-8 offset-2">
           <h3 class="text-white text-center mb-3">Find A Mountain</h3>
+
+          <!-- Dropdown -->
           <select class="col-8 offset-2" id="mtnPicker">
             <option>-- Select A Mountain --</option>
           </select>
         </form>
 
+        <!-- Table -->
         <table
           class="col-8 offset-2 table table-hover table-dark table-bordered mt-2 mb-5 text-center"
           id="mtnTable"
@@ -79,11 +87,14 @@
           <tbody id="mtnDisplay"></tbody>
         </table>
       </div>
+
+      <!-- Image -->
       <div class="row">
         <img class="img-fluid px-3" src="/images/mtnbodybg.jpg" />
       </div>
     </main>
 
+    <!-- Footer -->
     <footer class=" bg-white p-2 mb-2 text-center">
       John Torres - HartCode 2019
     </footer>
@@ -101,6 +112,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="scripts/mtnscript.js"></script>
+    <script src="scripts/mtnscript.min.js"></script>
   </body>
 </html>

@@ -2,6 +2,7 @@ body {
   background-color: darkolivegreen;
 }
 
+/* Header backgrounds and text */
 #indexHeader {
   position: relative;
   top: 1em;
@@ -26,6 +27,7 @@ h1 {
   text-shadow: 6px 5px #000;
 }
 
+/* Nav and Nav Hover */
 nav {
   bottom: 14em;
   right: 2em;
@@ -44,6 +46,7 @@ nav a:hover {
   color: white;
 }
 
+/* Horizontal Rule and Form positioning */
 hr,
 form {
   position: relative;
@@ -54,6 +57,7 @@ label {
   font-size: 1.3em;
 }
 
+/* Initial display set to none, each displays with radio button change via js */
 #pickerByLocationDiv,
 #pickerByParkTypeDiv,
 #pickerByAllDiv {
@@ -64,6 +68,7 @@ footer {
   background-image: linear-gradient(white, gray);
 }
 
+/* Media Queries set by increments of 200 pixels. */
 @media (min-width: 300px) {
   h1 {
     font-size: 1.6em;

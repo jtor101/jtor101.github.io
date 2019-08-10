@@ -21,40 +21,46 @@
   </head>
 
   <body class="container-fluid">
+    <!-- Header -->
     <header class="jumbotron img-fluid" id="indexHeader">
       <h1 class="text-left">Palisades Parks</h1>
     </header>
 
+    <!-- Nav -->
     <nav class="row position-relative">
       <ul class="col-4 offset-8 nav flex-column">
         <li class="nav-item">
-          <a class="mb-3 nav-link text-center" href="index.html"
-            >Palisades</a>
+          <a class="mb-3 nav-link text-center" href="index.html">Palisades</a>
         </li>
         <li class="nav-item">
           <a class="mb-3 nav-link text-center" href="mountains.html"
-            >Misty Mountains</a>
+            >Misty Mountains</a
+          >
         </li>
       </ul>
     </nav>
 
+    <!-- Main -->
     <main>
       <section class="row position-relative">
         <div class="col-7">
           <h2 class="text-white">About Us</h2>
           <p class="text-white">
-            The Palisades Parks Service was named after a song by the legendary Counting
-            Crows. We believe in preserving the essence of our natural beauty
-            for as long as we possibly can. And we hope that you'll join us at
-            one of our many parks sometime soon!
+            The Palisades Parks Service was named after a song by the legendary
+            Counting Crows. We believe in preserving the essence of our natural
+            beauty for as long as we possibly can. And we hope that you'll join
+            us at one of our many parks sometime soon!
           </p>
         </div>
       </section>
 
+      <!-- Divider -->
       <hr class="bg-white" />
+
       <div class="row">
         <form class="col-8 offset-2 text-center">
           <h3 class="text-white mb-3">Find A Park</h3>
+          <!-- Location radio button -->
           <div class="form-check">
             <input
               class="form-check-input"
@@ -70,6 +76,7 @@
               Search by Location
             </label>
           </div>
+          <!-- Park Type radio button -->
           <div class="form-check">
             <input
               class="form-check-input"
@@ -85,6 +92,7 @@
               Search by Park Type
             </label>
           </div>
+          <!-- See All Parks radio button -->
           <div class="form-check mb-5">
             <input
               class="form-check-input"
@@ -98,6 +106,7 @@
             </label>
           </div>
 
+          <!-- Select Location dropdown -->
           <div class="form-group" id="pickerByLocationDiv">
             <label class="text-white" for="pickerByLocation"
               >Select Location:
@@ -106,6 +115,7 @@
               <option>-- State --</option>
             </select>
           </div>
+          <!-- Select Park Type dropdown -->
           <div class="form-group" id="pickerByParkTypeDiv">
             <label class="text-white" for="pickerByParkType"
               >Select Park Type:
@@ -114,6 +124,7 @@
               <option>-- Park Type --</option>
             </select>
           </div>
+          <!-- See All Parks dropdown -->
           <div class="form-group" id="pickerByAllDiv">
             <label class="text-white" for="pickerAll">Select A Park: </label>
             <select class="form-control" id="pickerAll">
@@ -122,9 +133,12 @@
           </div>
         </form>
       </div>
+
+      <!-- Table -->
       <div class="row mb-5">
         <table
-          class="text-center table table-hover table-dark table-bordered col-10 offset-1" id="parkTable"
+          class="text-center table table-hover table-dark table-bordered col-10 offset-1"
+          id="parkTable"
         >
           <thead>
             <tr>
@@ -142,11 +156,14 @@
           <tbody id="parkDisplay"></tbody>
         </table>
       </div>
+
+      <!-- Image -->
       <div class="row">
-        <img class="img-fluid px-3" src="/images/indexbodybg.jpg">
+        <img class="img-fluid px-3" src="/images/indexbodybg.jpg" />
       </div>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-white p-2 mb-2 text-center">
       John Torres - HartCode 2019
     </footer>
@@ -164,6 +181,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="scripts/parkscript.js"></script>
+    <script src="scripts/parkscript.min.js"></script>
   </body>
 </html>

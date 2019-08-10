@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function() {
-  // Wiring In Events
+  // Get ID's
   // Initial select radio buttons
   let locationSelected = document.getElementById("initialSelectLocation");
   let parkTypeSelected = document.getElementById("initialSelectParkType");
@@ -20,7 +20,6 @@ window.onload = function() {
   // Table Body
   let parkDisplay = document.getElementById("parkDisplay");
 
-  
   // Radio buttons decide which dropdown to show on change.
   // Search by Location selected
   locationSelected.onchange = function() {
@@ -144,17 +143,18 @@ window.onload = function() {
   $.getJSON("data/nationalparks.json", function(data) {
     objs = data;
 
-      // fills dropdown options - See All Parks
-  for (let i = 0; i < objs.parks.length; i++) {
-    let parkAll = objs.parks[i].LocationName;
-    let element = document.createElement("option");
-    element.text = parkAll;
-    element.value = parkAll;
-    allSelector.appendChild(element);
-  }
+    // fills dropdown options - See All Parks
+    for (let i = 0; i < objs.parks.length; i++) {
+      let parkAll = objs.parks[i].LocationName;
+      let element = document.createElement("option");
+      element.text = parkAll;
+      element.value = parkAll;
+      allSelector.appendChild(element);
+    }
 
     // on Change event, populates table. - Location
     locationSelector.onchange = function() {
+      // Clear table first.
       parkDisplay.innerHTML = "";
 
       // Establish Selection
@@ -165,6 +165,7 @@ window.onload = function() {
       // Loop through parks array for all matching values
       for (let i = 0; i < objs.parks.length; i++) {
         if (objs.parks[i].State == selectedState) {
+          // Establish row and cell insertion.
           let row = parkDisplay.insertRow(0);
           let cellA1 = row.insertCell(0);
           let cellA2 = row.insertCell(1);
@@ -173,6 +174,7 @@ window.onload = function() {
           let cellA5 = row.insertCell(4);
           let cellA6 = row.insertCell(5);
 
+          // Append results to table.
           cellA1.innerHTML = objs.parks[i].LocationName;
           cellA2.innerHTML = objs.parks[i].Address;
           cellA3.innerHTML = objs.parks[i].City;
@@ -185,17 +187,17 @@ window.onload = function() {
 
     // on Change event, populates table. - Park Type
     parkTypeSelector.onchange = function() {
+      // Clears table first.
       parkDisplay.innerHTML = "";
+
       // Establish Selection
-      let selection = parkTypeSelector.selectedIndex - 1;
       let selectedType = parkTypeSelector.value;
-      //console logs correct Type
 
       // Compare selected Type to part of name.
       // Loop through parks array for all matching values
-
       for (let i = 0; i < objs.parks.length; i++) {
         if (objs.parks[i].LocationName.includes(selectedType)) {
+          // Establish row and cell insertion.
           let row = parkDisplay.insertRow(0);
           let cellA1 = row.insertCell(0);
           let cellA2 = row.insertCell(1);
@@ -204,6 +206,7 @@ window.onload = function() {
           let cellA5 = row.insertCell(4);
           let cellA6 = row.insertCell(5);
 
+          // Append results to table.
           cellA1.innerHTML = objs.parks[i].LocationName;
           cellA2.innerHTML = objs.parks[i].Address;
           cellA3.innerHTML = objs.parks[i].City;
@@ -216,24 +219,27 @@ window.onload = function() {
 
     // on Change event, populates table. - See All Parks
     allSelector.onchange = function() {
-        let selection = allSelector.selectedIndex - 1;
+      let selection = allSelector.selectedIndex - 1;
 
-        parkDisplay.innerHTML = "";
+      // Clear table first
+      parkDisplay.innerHTML = "";
 
-            let row = parkDisplay.insertRow(0);
-            let cellA1 = row.insertCell(0);
-            let cellA2 = row.insertCell(1);
-            let cellA3 = row.insertCell(2);
-            let cellA4 = row.insertCell(3);
-            let cellA5 = row.insertCell(4);
-            let cellA6 = row.insertCell(5);
-  
-            cellA1.innerHTML = objs.parks[selection].LocationName;
-            cellA2.innerHTML = objs.parks[selection].Address;
-            cellA3.innerHTML = objs.parks[selection].City;
-            cellA4.innerHTML = objs.parks[selection].State;
-            cellA5.innerHTML = objs.parks[selection].ZipCode;
-            cellA6.innerHTML = objs.parks[selection].Phone;
+      // Establish row and cell insertion.
+      let row = parkDisplay.insertRow(0);
+      let cellA1 = row.insertCell(0);
+      let cellA2 = row.insertCell(1);
+      let cellA3 = row.insertCell(2);
+      let cellA4 = row.insertCell(3);
+      let cellA5 = row.insertCell(4);
+      let cellA6 = row.insertCell(5);
+
+      // Append results to table.
+      cellA1.innerHTML = objs.parks[selection].LocationName;
+      cellA2.innerHTML = objs.parks[selection].Address;
+      cellA3.innerHTML = objs.parks[selection].City;
+      cellA4.innerHTML = objs.parks[selection].State;
+      cellA5.innerHTML = objs.parks[selection].ZipCode;
+      cellA6.innerHTML = objs.parks[selection].Phone;
     };
   });
   // JSON function ends
